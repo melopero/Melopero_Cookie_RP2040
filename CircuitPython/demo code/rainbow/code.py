@@ -5,7 +5,6 @@ import time
 import board
 import neopixel
 
-
 # On CircuitPlayground Express, and boards with built in status NeoPixel -> board.NEOPIXEL
 # Otherwise choose an open pin connected to the Data In of the NeoPixel strip, i.e. board.D1
 pixel_pin = board.D17
