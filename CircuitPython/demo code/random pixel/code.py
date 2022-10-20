@@ -7,12 +7,9 @@ import neopixel
 from random import randrange
 
 
-# On CircuitPlayground Express, and boards with built in status NeoPixel -> board.NEOPIXEL
-# Otherwise choose an open pin connected to the Data In of the NeoPixel strip, i.e. board.D1
+
 pixel_pin = board.D17
 
-# On a Raspberry pi, use this instead, not all pins are supported
-# pixel_pin = board.D18
 
 # The number of NeoPixels
 num_pixels = 25
@@ -68,4 +65,4 @@ while True:
 
     random_pix_cycle(0.3)  # random pixel cycle with 1ms delay per step
 
-# Write your code here :-)
+

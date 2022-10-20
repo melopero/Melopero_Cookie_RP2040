@@ -1,3 +1,9 @@
+#   This  script is based on the FeatherS2 Neo demo code 
+#   by Seon Rozenblum, Unexpected Maker
+#   Project home:
+#   https://unexpectedmaker.com/feathers2-neo
+
+
 import time, gc
 from melopero_cookie_rp2040_display import MeloperoCookieRP2040Display, MatrixMessage, MatrixAnimation
 
@@ -15,7 +21,7 @@ matrix = MatrixMessage(display.matrix)
 
 
 message = "Hello Cookie "
-#message = matrix.get_characters()
+
 
 
 # Set the scroll direction for the message
@@ -23,6 +29,7 @@ message = "Hello Cookie "
 matrix.scroll_direction = matrix.LEFT
 
 # Set the display rotation
+# this feature is not supported yet
 matrix.display_rotation = 0
 
 # Setup the message, passing it the message, the scroll delay step in ms (default is 0.2) and if there should be padding between each character, or if they should butt up against eachother (default is True)
@@ -43,8 +50,6 @@ while True:
 
         NEXT_COL = time.monotonic()
 
-        # Set the color on the NeoPixel
-        #display.pixel[0] = (r, g, b)
 
         # If the color_index is divisible by 100, flip the state of the green LED on D21
         if color_index % 100 == 0:
@@ -54,5 +59,4 @@ while True:
     #matrix.show_message(color=[r,g,b], brightness=0.2, fade_out=0.2, restart=False)
     
     # Show the message on the matrix with auto-restart
-    
     matrix.show_message(color=[r,g,b], brightness=0.2, fade_out=0.2, restart=True)
