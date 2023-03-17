@@ -1,5 +1,5 @@
-#ifndef COOKIE_H
-#define COOKIE_H
+#ifndef COOKIERP2040_H
+#define COOKIERP2040_H
 
 extern "C"
 {
@@ -166,4 +166,4 @@ private:
 bool repeating_timer_callback(repeating_timer_t *rt);
 void gpio_callback(uint gpio, uint32_t event_mask);
 
-#endif  // COOKIE_H
+#endif  // COOKIERP2040_H
