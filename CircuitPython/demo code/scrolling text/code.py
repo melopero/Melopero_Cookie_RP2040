@@ -1,3 +1,9 @@
+#
+#   Melopero Cookie RP2040 Display CircuitPython
+#	Scrolling text example
+#   Get your Cookie RP2040 here:
+#   www.melopero.com/melopero_cookie_rp2040
+#
 #   This  script is based on the FeatherS2 Neo demo code 
 #   by Seon Rozenblum, Unexpected Maker
 #   Project home:
@@ -20,7 +26,7 @@ NEXT_COL = 0.01
 matrix = MatrixMessage(display.matrix)
 
 
-message = "Hello Cookie "
+message = "HELLO COOKIE "
 
 
 
